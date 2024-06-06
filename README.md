@@ -7,14 +7,14 @@
 Project contain 3 microservioces, Postgress DB, Kafka
 Also added Postman collection for testing the APIS
 
-## api-server
+## Songs-server
 
 1. GET - song - search songs by name of song and artist
 2. POST - insertJob - create new Job to add song by song name and artist Used for insert songs in asyncronous job, post request to add song as a producer for message in the tpopic 'insert_song_jobs'
 3. GET - insertJobStatus - send an insertJobId to get the status of the proccess from DB with status success or failed and information .
 4. Using Middleware to validate request with class validator
 
-## consumer-server
+## Consumer-worker
 
 1.  Used to consume as a microservice, to send data from messages into the DB
 
