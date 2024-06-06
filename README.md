@@ -16,15 +16,15 @@ Also added Postman collection for testing the APIS
 
 ## Consumer-worker
 
-1.  Used to consume as a microservice, to send data from messages into the DB
+Used to consume messages as a microservice, and send songs data from messages into the DB
 
 ## Lyrics-server
 
-service that return lyrics for songName - I assume that data will not change so added in-memory cache for it, and with large scale probably will use a more robust solution (such as Redis)
+Service that return lyrics for songName - I assume that data will not change so added in-memory cache for it, and with large scale probably will use a more robust solution (such as Redis)
 
 ## DB
 
-Handle some DB changes to handle requirements
+Needed to make some DB changes to handle requirements
 
 1. Add PK,SERIAL to index number id. (The index field should be auto generated)
 2. Efficent search by adding index for song name+artist
